@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Bienvenidxs a MercadoLiebre</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://kit.fontawesome.com/04cbbf95a4.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <header class="mainheader">
+            <div class="top-header">
+                <div class="logo"> 
+                    <img src="images/logo-mercado-liebre.svg">
+                </div>
+                <h2 class="copy-header"><i class="fas fa-hand-holding-usd"> </i>Comprá en cuotas y sin tarjeta de crédito</h2>   
+                    </div>
+            <nav class="main-navbar">
+                <ul class="lefnavbar">
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Tiendas Oficiales</a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+                <ul class="rightnavbar">
+                    <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                    <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+                </ul>
+            </nav>
+            <div class="burger-menu">
+                <i class="fa fa-bars burger"></i>
+            </div>
+        </header>
+
+        <form action="/crearcuenta" method="POST"  class="createform">
+            <div class="controldelformulario">
+                <label>Nombre y Apellido</label>
+                <input type="text" name="Nombre" class="control">
+            </div>
+            <div class="controldelformulario">
+                <label>Usuario</label>
+                <input type="text" name="Usuario" class="control">
+                </div>    
+            <div class="controldelformulario">
+                <label>Fecha Nacimiento</label>
+                <input type="date"name="fechaNacimiento" placeholder="yyyy/mm/dd"class="control">
+            
+            <div class="controldelformulario">
+                <label>Direccion</label>
+                <input type="text" name="Direccion" class="control">
+            </div>     
+            </div>
+            <div  class="controldeopciones">
+                <label>Queres Comprar o Vender?</label>
+                    <div>Comprar</div><input type="radio" name="EnOferta">
+                    <div>Vender</div><input type="radio" name="EnOferta">
+                </div>
+            </div>
+                 <div  class="controldelformulario">
+             
+            <div class="controldelformulario">
+                <label>Categoria de interes</label>
+                <select name="Categoria" id=""class="control">
+                    <option value="Hogar">Hogar</option>
+                    <option value="Electro">Electro</option>
+                    <option value="Moda">Moda</option>
+                    <option value="Jugueteria">Jugueteria</option>
+                    <option value="Vida sana">Vida sana</option>
+                </select>
+            </div>
+            <div class="controldelformulario">
+                <label>Seleccionar una imagen para el perfil:</label>
+                <input type="file" name="avatar" accept=".jpg">
+            </div>
+            <div class="controldelformulario">
+                <label>Contraseña</label>
+                <input type="password" name="Contraseña" class="control">
+            </div>     
+            <div class="controldelformulario">
+                <label>Confirmar Contraseña<label>
+                <input type="password" name="ConfirmarContraseña" class="control">
+            </div>
+            <div  class="controldelformulario">
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+            </div>
+                   
+        </form>
